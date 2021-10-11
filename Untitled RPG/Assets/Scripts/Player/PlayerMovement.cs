@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private PlayerInputActions controller;
+    //private PlayerInputActions controller;
     private Rigidbody2D rb; 
 
     [SerializeField] public float speed = 10f;
@@ -12,11 +12,11 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        controller = new PlayerInputActions();
+        //controller = new PlayerInputActions();
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnEnable(){
+    /*private void OnEnable(){
         controller.Enable();
     }
 
@@ -29,5 +29,5 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 moveInput = controller.Movement.Move.ReadValue<Vector2>();
         rb.velocity = moveInput * speed;
-    }
+    }*/
 }
