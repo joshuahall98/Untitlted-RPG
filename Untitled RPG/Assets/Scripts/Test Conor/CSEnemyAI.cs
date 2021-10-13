@@ -11,7 +11,9 @@ public class CSEnemyAI : MonoBehaviour
 
     private Transform target;
 
+    //define states for the animation
     public enum State { aggressive, passive }
+    //action variable to grap a certain anim state
     public State action = State.passive;
 
     private void Start()
