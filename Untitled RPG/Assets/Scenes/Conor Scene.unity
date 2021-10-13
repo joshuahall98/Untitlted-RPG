@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 467199607}
   - component: {fileID: 467199606}
   - component: {fileID: 467199608}
+  - component: {fileID: 467199609}
   m_Layer: 0
   m_Name: PunchEmemyDesign
   m_TagString: Untagged
@@ -430,7 +431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!61 &467199608
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -457,6 +460,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31043434, y: 0.94113445}
   m_EdgeRadius: 0
+--- !u!95 &467199609
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467199602}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &484844409
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +537,7 @@ GameObject:
   - component: {fileID: 654019137}
   - component: {fileID: 654019136}
   - component: {fileID: 654019135}
+  - component: {fileID: 654019141}
   m_Layer: 0
   m_Name: PunchEmemyDesign (5)
   m_TagString: Untagged
@@ -581,7 +604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &654019138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,6 +684,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &654019141
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654019134}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &765045493
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +775,7 @@ GameObject:
   - component: {fileID: 884296981}
   - component: {fileID: 884296980}
   - component: {fileID: 884296979}
+  - component: {fileID: 884296985}
   m_Layer: 0
   m_Name: PunchEmemyDesign (1)
   m_TagString: Untagged
@@ -797,7 +842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &884296982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +922,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &884296985
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884296978}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1259663093
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +955,7 @@ GameObject:
   - component: {fileID: 1259663096}
   - component: {fileID: 1259663095}
   - component: {fileID: 1259663094}
+  - component: {fileID: 1259663100}
   m_Layer: 0
   m_Name: PunchEmemyDesign (7)
   m_TagString: Untagged
@@ -955,7 +1022,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &1259663097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,6 +1102,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1259663100
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259663093}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1326259772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,6 +1135,7 @@ GameObject:
   - component: {fileID: 1326259775}
   - component: {fileID: 1326259774}
   - component: {fileID: 1326259773}
+  - component: {fileID: 1326259779}
   m_Layer: 0
   m_Name: PunchEmemyDesign (2)
   m_TagString: Untagged
@@ -1113,7 +1202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &1326259776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1282,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1326259779
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326259772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1412078655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1315,7 @@ GameObject:
   - component: {fileID: 1412078658}
   - component: {fileID: 1412078657}
   - component: {fileID: 1412078656}
+  - component: {fileID: 1412078662}
   m_Layer: 0
   m_Name: PunchEmemyDesign (8)
   m_TagString: Untagged
@@ -1271,7 +1382,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &1412078659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,6 +1462,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1412078662
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412078655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1538537781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,6 +1711,7 @@ GameObject:
   - component: {fileID: 1846625890}
   - component: {fileID: 1846625889}
   - component: {fileID: 1846625888}
+  - component: {fileID: 1846625894}
   m_Layer: 0
   m_Name: PunchEmemyDesign (3)
   m_TagString: Untagged
@@ -1645,7 +1778,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &1846625891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1723,6 +1858,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1846625894
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846625887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2060466685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1891,7 @@ GameObject:
   - component: {fileID: 2060466688}
   - component: {fileID: 2060466687}
   - component: {fileID: 2060466686}
+  - component: {fileID: 2060466692}
   m_Layer: 0
   m_Name: PunchEmemyDesign (9)
   m_TagString: Untagged
@@ -1803,7 +1958,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &2060466689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,6 +2038,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2060466692
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060466685}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2072207738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +2071,7 @@ GameObject:
   - component: {fileID: 2072207741}
   - component: {fileID: 2072207740}
   - component: {fileID: 2072207739}
+  - component: {fileID: 2072207745}
   m_Layer: 0
   m_Name: PunchEmemyDesign (6)
   m_TagString: Untagged
@@ -1961,7 +2138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &2072207742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,6 +2218,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2072207745
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072207738}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2079127299
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2251,7 @@ GameObject:
   - component: {fileID: 2079127302}
   - component: {fileID: 2079127301}
   - component: {fileID: 2079127300}
+  - component: {fileID: 2079127306}
   m_Layer: 0
   m_Name: PunchEmemyDesign (4)
   m_TagString: Untagged
@@ -2119,7 +2318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d72743f43adc61b4ca02abcb6e1fa31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 467199609}
   speed: 1
+  action: 0
 --- !u!114 &2079127303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,6 +2398,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2079127306
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079127299}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6d86ad7db061624a9bc7140f3a384fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2144554262
 GameObject:
   m_ObjectHideFlags: 0
