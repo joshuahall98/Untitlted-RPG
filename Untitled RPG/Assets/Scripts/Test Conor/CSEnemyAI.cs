@@ -10,12 +10,9 @@ public class CSEnemyAI : MonoBehaviour
     public float distStop;
     public float speed;
 
-    //Line of Sight Variable
-    public float lineOfSightDist;
-
     //Randomise Patrol Variables
 
-    public float startWaitTime;
+    private float startWaitTime;
     private float waitTime;
     public Transform moveSpot;
     public float minX;
@@ -41,7 +38,9 @@ public class CSEnemyAI : MonoBehaviour
         //sets anim to desired action
         anim.SetInteger("State", (int)action);
 
+        startWaitTime = UnityEngine.Random.Range(1, 3);
         waitTime = startWaitTime;
+
         moveSpot.position = new Vector2(UnityEngine.Random.Range(minX, maxX), UnityEngine.Random.Range(minY, maxY));
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
@@ -49,18 +48,7 @@ public class CSEnemyAI : MonoBehaviour
     }
     private void Update()
     {
-
-        //Line of Sight
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, moveSpot.position, lineOfSightDist);
-        if (hitInfo.collider != null)
-        {
-            Debug.DrawLine(transform.position, hitInfo.point, Color.red);
-        }
-        else
-        {
-            Debug.DrawLine(transform.position, transform.position + moveSpot.position * lineOfSightDist, Color.green);
-        }
-
+       
         //Follow Player endlessly
         // transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
@@ -68,9 +56,12 @@ public class CSEnemyAI : MonoBehaviour
 
         if (Vector2.Distance(transform.position, moveSpot.position) < 0.2f)
         {
+            
+
             if (waitTime <= 0)
             {
                 moveSpot.position = new Vector2(UnityEngine.Random.Range(minX, maxX), UnityEngine.Random.Range(minY, maxY));
+                startWaitTime = UnityEngine.Random.Range(1, 3);
                 waitTime = startWaitTime;
             }
             else

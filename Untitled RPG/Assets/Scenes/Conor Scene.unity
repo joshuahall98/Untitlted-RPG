@@ -339,7 +339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 467199605}
   - component: {fileID: 467199604}
-  - component: {fileID: 467199603}
   - component: {fileID: 467199607}
   - component: {fileID: 467199606}
   - component: {fileID: 467199608}
@@ -351,18 +350,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &467199603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467199602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d0fe61fc3870cc4ba601b4c039fd78e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &467199604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -464,8 +451,6 @@ MonoBehaviour:
   anim: {fileID: 467199609}
   distStop: 0
   speed: 1
-  lineOfSightDist: 4
-  startWaitTime: 0
   moveSpot: {fileID: 415886256}
   minX: -7.35
   maxX: 7.35
