@@ -10,8 +10,6 @@ public class JAHPlayerMovement : MonoBehaviour
     //Allows visibility to Editor as Private
     [SerializeField] private float speed = 2.5f;
 
-    private Vector2 inputDirection;
-
     private bool isWalking;
 
     private Animator anim;
@@ -27,28 +25,7 @@ public class JAHPlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        float xaxis = inputDirection.x;
-        float yaxis = inputDirection.y;
-
-        if (xaxis != 0 || yaxis != 0)
-        {
-            anim.SetFloat("Horizontal", xaxis);
-            anim.SetFloat("Vertical", yaxis);
-            if (!isWalking)
-            {
-                isWalking = true;
-                anim.SetBool("isMoving", isWalking);
-            }
-        }
-        else
-        {
-            if (isWalking)
-            {
-                isWalking = false;
-                anim.SetBool("isMoving", isWalking);
-                StopMoving();
-            }
-        }
+        
     }
 
     private void OnEnable()
@@ -66,12 +43,29 @@ public class JAHPlayerMovement : MonoBehaviour
         Vector2 moveInput = playerInput.Movement.Move.ReadValue<Vector2>();
         rb.velocity = moveInput * speed;
 
-       
-    }
+        float xaxis = moveInput.x;
+        float yaxis = moveInput.y;
 
-    private void StopMoving()
-    {
-        rb.velocity = Vector2.zero;
+        if(xaxis != 0 || yaxis != 0)
+        {
+            anim.SetFloat("Horizontal", xaxis);
+            anim.SetFloat("Vertical", yaxis);
+            if (!isWalking)
+            {
+                isWalking = true;
+                anim.SetBool("isMoving", isWalking);
+            }
+            
+        }
+        else
+        {
+            if (isWalking)
+            {
+                isWalking = false;
+                anim.SetBool("isMoving", isWalking);
+            }
+        }
+        
     }
 
     
